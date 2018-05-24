@@ -14,13 +14,18 @@ vector<int> read_ints(int n) {
 
 int main() {
     int n = 0;
+    int p = 0;
     cin >> n;
+    cin >> p;
+    cout << p << endl;
 
     vector<int> ints = read_ints(n);
 
-    for (vector<int>::iterator it = ints.begin(); it != ints.end(); ++it) {
-        cout << *it << ' ';
-    }
+
+
+    // for (vector<int>::iterator it = ints.begin(); it != ints.end(); ++it) {
+    //     cout << *it << ' ';
+    // }
 
     cout << endl;
     return 0;
