@@ -3,7 +3,7 @@
 
 using namespace std;
 
-vector<int> read_ints(int n) {
+vector<int> create_ints(int n) {
     vector<int> ints;
     for (int i = 1; i <= n; ++i) {
         ints.push_back(i);
@@ -17,9 +17,9 @@ int main() {
     int p = 0;
     cin >> n;
     cin >> p;
-    cout << p << endl;
+    // cout << p << endl;
 
-    vector<int> ints = read_ints(n);
+    vector<int> ints = create_ints(n);
 
 
 
