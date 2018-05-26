@@ -1,32 +1,27 @@
 #include <iostream>
 #include <vector>
+#include <cstdlib>
+#include <cmath>
 
 using namespace std;
 
-vector<int> create_ints(int n) {
-    vector<int> ints;
-    for (int i = 1; i <= n; ++i) {
-        ints.push_back(i);
-        // cout << ints[i] << ' ';
-    }
-    return ints;
+int calculate_turns(int e, int p) {
+    int t = 0;
+    t = abs((p / 2) - (e / 2));
+    return t;
 }
 
 int main() {
-    int n = 0;
+    int e = 0;
     int p = 0;
-    cin >> n;
+
+    cin >> e;
     cin >> p;
+
+    // cout << e << endl;
     // cout << p << endl;
 
-    vector<int> ints = create_ints(n);
+    cout << calculate_turns(e, p);
 
-
-
-    // for (vector<int>::iterator it = ints.begin(); it != ints.end(); ++it) {
-    //     cout << *it << ' ';
-    // }
-
-    cout << endl;
     return 0;
 }
